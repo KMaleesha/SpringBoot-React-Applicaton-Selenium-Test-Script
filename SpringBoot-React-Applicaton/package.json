@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd StudentManagementSystem && mvn spring-boot:run",
+    "start-frontend": "cd student-frontend && npm start"
+  }
+  
+  
+}
